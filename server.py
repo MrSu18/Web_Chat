@@ -9,6 +9,7 @@ class user:
     def intro(self):
         print(self.name,self.pwd)
 
+
 # 配置服务器
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server.bind(('localhost', 10000)) # bind(ip,port)
