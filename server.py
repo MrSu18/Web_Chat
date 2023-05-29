@@ -25,6 +25,7 @@ def User_Login(address):
             if key==line[1]:
                 server.sendto('登陆成功'.encode('UTF-8'), address)
                 return 1
+    server.sendto('用户名或密码错误'.encode('UTF-8'), address)
     return 0
 
 # 配置服务器
